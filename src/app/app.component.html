@@ -1,0 +1,8 @@
+<h1>
+  {{title}}
+</h1>
+<div class="div-display">
+	<app-parent (emmiter)="dataUsed = $event"  class="parent-display"></app-parent>
+	<div class="div-space"></div>
+	<app-child [inputRecieve]="dataUsed" class="child-display"></app-child>
+</div>

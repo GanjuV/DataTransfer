@@ -1,0 +1,14 @@
+<h3>
+  Child Component!
+</h3>
+Data recieved from parent through @Input() decorator when emitted by @Output: <span [ngClass]="{'green-span': inputRecieve > 0}">{{inputRecieve}}</span>
+<br/>
+<br/>
+<br/>
+<br/>
+Data recieved from parent through Subject Observer: <span [ngClass]="{'green-span': inputRecieveSubject > 0}">{{inputRecieveSubject}}</span>
+<br/>
+<br/>
+<br/>
+<br/>
+Data recieved from parent through Global Service: <span [ngClass]="{'green-span': globalData.globalData > 0}">{{globalData.globalData}}</span>

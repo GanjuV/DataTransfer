@@ -1,0 +1,28 @@
+<h3>
+  Parent Component!
+</h3>
+<h4>While clicking the buttons pay attention on the child layout</h4>
+<br/>
+<div>Sending data using EventEmitter @Output.</div>
+<div class="back">
+	<div class="button_base b04_3d_tick">
+	    <div>@Output()</div>
+	    <div (click)="dataOutput=dataOutput+1;emmiter.emit(dataOutput);" >Sending: {{dataOutput}}</div>
+	</div>
+</div>
+
+<div class="observale-text">Sending data using Observable Subject.</div>
+<div class="back">
+	<div class="button_base b04_3d_tick">
+	    <div>Subject</div>
+	    <div (click)="dataSubject=dataSubject+1;globalService.subjectData.next(dataSubject);" >Sending: {{dataSubject}}</div>
+	</div>
+</div>
+
+<div class="observale-text">Sending data using global service.</div>
+<div class="back">
+	<div class="button_base b04_3d_tick">
+	    <div>Service</div>
+	    <div (click)="globalService.globalData=globalService.globalData+1;" >Sending: {{globalService.globalData}}</div>
+	</div>
+</div>
